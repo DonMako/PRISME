@@ -1,0 +1,27 @@
+.evitement {
+  color:#555;
+  background:#fff;
+  position:absolute;
+  left:-99999rem;
+  z-index:100
+}
+
+.evitement:focus {
+  left:0;
+  padding:1em
+}
+
+body {
+  color: white;
+  background: black;
+}
+
+:focus {
+  outline: 4px solid blue
+}
+
+#outils {
+  background-color: whitesmoke;
+  border: 2px solid black;
+  border-radius: 20px
+}
