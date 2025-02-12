@@ -15,8 +15,8 @@ const diminishMargin = () => {
 }
 
 const ChangeMargin = () => {
-    return <div style={{'display':'flex','margin': '0.5em'}}>
-        <p style={{'color':'black'}}>Changer l'interlignage</p>
+    return <div id="marges">
+        <p id="interlignes">Changer l'interlignage</p>
         <button aria-label="Diminuer la marge" onClick={diminishMargin}>-</button>
         <button aria-label="Augmenter la marge" onClick={improveMargin}>+</button>
     </div>

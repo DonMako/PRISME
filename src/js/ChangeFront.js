@@ -6,8 +6,8 @@ const changeColor = () => {
 }
 
 const ChangeFront = () => {
-    return <form><label style={{'color':'black'}} htmlFor="front">Changer la couleur du texte</label>
-    <select onChange={changeColor} id="front" style={{'margin': '0.5em'}}>
+    return <form><label id="labelFront" htmlFor="front">Changer la couleur du texte</label>
+    <select onChange={changeColor} id="front">
       <option value="black">Noir</option>
       <option value="white">Blanc</option>
       <option value="red">Rouge</option>

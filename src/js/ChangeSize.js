@@ -15,8 +15,8 @@ const diminishSize = () => {
 }
 
 const ChangeSize = () => {
-    return <div style={{'display':'flex','margin': '0.5em'}}>
-        <p style={{'color':'black'}}>Changer la taille du texte</p>
+    return <div id="tailles">
+        <p id="changeTaille">Changer la taille du texte</p>
         <button aria-label="Diminuer la taille du texte" onClick={diminishSize}>-</button>
         <button aria-label="Augmenter la taille du texte" onClick={improveSize}>+</button>
     </div>

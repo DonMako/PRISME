@@ -20,7 +20,8 @@ const changeCursive = () => {
 }
 
 const ChangePolice = () => {
-    return <div style={{'display':'flex'}}>
+    return <div id="police">
+        <p id="choix">Choix de la police du texte</p>
         <button aria-label="Mettre la police Serif" onClick={changeSerif} style={{'font-family':'serif'}}>A</button>
         <button aria-label="Mettre la police Monospace" onClick={changeMonospace} style={{'font-family':'monospace'}}>A</button>
         <button aria-label="Mettre la police Cursive" onClick={changeCursive} style={{'font-family':'cursive'}}>A</button>

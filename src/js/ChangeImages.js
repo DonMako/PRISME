@@ -19,7 +19,7 @@ const afficher = () => {
 }
 
 const ChangeImages = () => {
-    return <div style={{'margin': '0.5em'}}>
+    return <div id="boutonsImages">
     <button onClick={afficher}>Afficher les images</button>
     <button onClick={cacher}>Masquer les images</button>
     </div>

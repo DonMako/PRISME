@@ -16,7 +16,7 @@ function App() {
         <ChangeMode/>
         <section id="contenu" style={{'display':'flex','marginBottom':'3em'}}>
           <UploadFichier sx={{'color':'black'}} onChange={setUploadedFile}/>
-          <div style={{'color':'black'}}>{uploadedFile.name}</div>
+          <div id="fileName">{uploadedFile.name}</div>
           <button onClick={deleteFile}>Fermer le PDF chargé</button>
         </section>
         <Profiles/>

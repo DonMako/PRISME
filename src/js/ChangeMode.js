@@ -19,7 +19,7 @@ const assombrir = () => {
 }
 
 const ChangeMode = () => {
-    return <div style={{'display':'flex','margin': '0.5em'}}>
+    return <div id="modes">
     <button onClick={eclaircir}>Mode clair</button>
     <button onClick={assombrir}>Mode sombre</button>
     </div>
