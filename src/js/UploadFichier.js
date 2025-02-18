@@ -5,14 +5,6 @@ const getRandomInt = (max = 1000000000) => {
     return Math.floor(Math.random() * Math.floor(max));
 };
 
-/**
- * Permet d'uploader des fichiers.
- *
- * @param {object} previousFile permet de forcer la sélection d'un fichier
- * @param {object} sx style à afficher sur la div racine
- * @param {function(object):void} onChange méthode lancé quand un fichier est choisi : (file) =>
- * @param {function():void} onDelete méthode lancé quand les fichiers sont supprimés : () =>
- */
 const UploadFichier = forwardRef(
   (
     {
