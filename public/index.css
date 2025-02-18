@@ -1,8 +1,8 @@
 @font-face { font-family: "OpenDyslexic"; src: url('https://dl.dropboxusercontent.com/s/qfpakpjedhsrdb9/OpenDyslexicAlta-Regular.ttf'); } 
 
 pdf.active {
-    font-family: OpenDyslexic;
- }
+  font-family: OpenDyslexic;
+}
 
 .evitement {
   color: #555;
