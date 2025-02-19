@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import UploadFichier from './js/UploadFichier';
+import UploadFile from './js/UploadFile';
 import ToolBar from './js/ToolBar';
 import ChangeMode from './js/ChangeMode';
 import Profiles from './js/Profiles';
@@ -15,7 +15,7 @@ function App() {
       <div id="outils">
         <ChangeMode/>
         <section id="contenu" style={{'display':'flex','marginBottom':'3em'}}>
-          <UploadFichier sx={{'color':'black'}} onChange={setUploadedFile}/>
+          <UploadFile sx={{'color':'black'}} onChange={setUploadedFile}/>
           <div id="fileName">{uploadedFile.name}</div>
           <button onClick={deleteFile}>Fermer le PDF chargé</button>
         </section>
