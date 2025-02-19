@@ -5,7 +5,7 @@ const getRandomInt = (max = 1000000000) => {
     return Math.floor(Math.random() * Math.floor(max));
 };
 
-const UploadFichier = forwardRef(
+const UploadFile = forwardRef(
   (
     {
       sx,
@@ -66,4 +66,4 @@ const UploadFichier = forwardRef(
   }
 );
 
-export default UploadFichier;
+export default UploadFile;
