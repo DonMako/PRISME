@@ -6,7 +6,7 @@ const changeColor = () => {
 }
 
 const ChangeBack = () => {
-    return <form><label id="labelBack" htmlFor="back">Changer la couleur du fond</label>
+    return <form><label id="colorBack" htmlFor="back">Changer la couleur du fond</label>
     <select onChange={changeColor} id="back">
       <option value="white">Blanc</option>
       <option value="black">Noir</option>
