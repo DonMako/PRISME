@@ -32,7 +32,7 @@ body {
   border-radius: 20px
 }
 
-#labelBack, #labelFront, #interlignes, #changeTaille, #fileName, #choix {
+#labelFront, #interlignes, #changeTaille, #fileName, #choix {
   color: black
 }
 
