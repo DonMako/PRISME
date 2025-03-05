@@ -40,7 +40,7 @@ body {
   margin: 0.5em
 }
 
-#police {
+#outils, #police {
   display: 'flex'
 }
 
