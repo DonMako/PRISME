@@ -17,7 +17,7 @@ const diminishWidth = () => {
 }
 
 const ChangeWidth = () => {
-    return <div style={{'display':'flex','margin': '0.5em'}}>
+    return <div id="boutonsLargeur">
         <p>Changer la largeur du PDF</p>
         <button aria-label="Diminuer la largeur du PDF" onClick={diminishWidth}>-</button>
         <button aria-label="Augmenter la largeur du PDF" onClick={improveWidth}>+</button>
