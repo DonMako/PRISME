@@ -43,3 +43,9 @@ body {
 #police {
   display: 'flex'
 }
+
+#choixProfil {
+  display: flex;
+  justify-content: center;
+  marginBottom: 3em
+}
