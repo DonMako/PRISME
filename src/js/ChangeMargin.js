@@ -15,7 +15,7 @@ const diminishMargin = () => {
 }
 
 const ChangeMargin = () => {
-    return <div id="marges">
+    return <div id="boutonsMarges">
         <p id="interlignes">Changer l'interlignage</p>
         <button aria-label="Diminuer la marge" onClick={diminishMargin}>-</button>
         <button aria-label="Augmenter la marge" onClick={improveMargin}>+</button>
