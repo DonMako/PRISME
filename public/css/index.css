@@ -40,11 +40,6 @@ body {
   margin: 0.5em
 }
 
-#modes, #tailles {
-  display: 'flex';
-  margin: 0.5em
-}
-
 #police {
   display: 'flex'
 }
