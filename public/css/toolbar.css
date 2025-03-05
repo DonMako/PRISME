@@ -1,8 +1,8 @@
-#boutonsWidth {
+#boutonsMarges, #boutonsWidth {
     display: flex;
     margin: 0.5em
 }
 
-#colorBack, #colorFront {
+#colorBack, #colorFront, #interlignes {
     color: black
 }
