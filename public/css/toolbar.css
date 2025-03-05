@@ -1,4 +1,4 @@
-#boutonsMarges, #boutonsWidth {
+#boutonsLargeurs, #boutonsMarges, #boutonsModes, #boutonsTailles {
     display: flex;
     margin: 0.5em
 }
