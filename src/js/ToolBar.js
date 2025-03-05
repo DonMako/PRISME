@@ -6,7 +6,7 @@ import ChangeImages from "./ChangeImages";
 import ChangePolice from "./ChangePolice";
 
 const ToolBar = () => {
-    return <nav id="parametres" style={{'display':'flex'}}>
+    return <nav id="outils">
         <ChangeSize/>
         <ChangeFront/>
         <ChangeBack/>
