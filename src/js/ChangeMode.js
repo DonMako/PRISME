@@ -19,7 +19,7 @@ const assombrir = () => {
 }
 
 const ChangeMode = () => {
-    return <div id="modes">
+    return <div id="boutonsModes">
     <button onClick={eclaircir}>Mode clair</button>
     <button onClick={assombrir}>Mode sombre</button>
     </div>
