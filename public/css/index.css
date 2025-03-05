@@ -32,7 +32,7 @@ body {
   border-radius: 20px
 }
 
-#interlignes, #changeTaille, #fileName, #choix {
+#changeTaille, #fileName, #choix {
   color: black
 }
 
@@ -40,7 +40,7 @@ body {
   margin: 0.5em
 }
 
-#marges, #modes, #tailles {
+#modes, #tailles {
   display: 'flex';
   margin: 0.5em
 }
