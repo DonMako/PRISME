@@ -15,7 +15,7 @@ const diminishSize = () => {
 }
 
 const ChangeSize = () => {
-    return <div id="boutonsTailles">
+    return <div id="boutonsTaille">
         <p id="changeTaille">Changer la taille du texte</p>
         <button aria-label="Diminuer la taille du texte" onClick={diminishSize}>-</button>
         <button aria-label="Augmenter la taille du texte" onClick={improveSize}>+</button>
