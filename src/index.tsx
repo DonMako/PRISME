@@ -1,7 +1,7 @@
 import React, { ReactElement, useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import ToolBar from './js/ToolBar';
-import ChangeMode from './js/ChangeMode';
+import ChangeMode from './ChangeMode';
 import Profiles from './js/Profiles';
 
 const App = function (): ReactElement {
@@ -11,16 +11,18 @@ const App = function (): ReactElement {
   }
 
   return <div className="App">
-    <div id="outils">
-      <ChangeMode />
+    <ChangeMode />
+    <h2 id="outils">
       <section id="contenu" style={{ 'display': 'flex', 'marginBottom': '3em' }}>
         <button>On doit avoir l'upload ici</button>
         <div id="fileName">{uploadedFile}</div>
         <button onClick={deleteFile}>Fermer le PDF chargé</button>
       </section>
       <Profiles />
+    </h2>
+    <h2>
       <ToolBar />
-    </div>
+    </h2>
     {uploadedFile && <main id="pdf">
       <p>Ministère de l’éducation nationale</p>
       <p>Liberté Égalité Fraternité</p>
