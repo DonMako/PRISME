@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 
 const improveWidth = function(): void {
     const element = document.getElementById('pdf');
@@ -18,7 +18,7 @@ const diminishWidth = function(): void {
     }
 }
 
-const ChangeWidth = function() {
+const ChangeWidth = function(): ReactElement {
     return <div id="boutonsLargeur">
         <p>Changer la largeur du PDF</p>
         <button aria-label="Diminuer la largeur du PDF" onClick={diminishWidth}>-</button>

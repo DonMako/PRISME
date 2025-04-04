@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 
 const cacher = function(): void {
     const element = document.getElementById('pdf');
@@ -20,7 +20,7 @@ const afficher = function(): void {
     }
 }
 
-const ChangeImages = function() {
+const ChangeImages = function(): ReactElement {
     return <div id="boutonsImages">
         <button onClick={afficher}>Afficher les images</button>
         <button onClick={cacher}>Masquer les images</button>

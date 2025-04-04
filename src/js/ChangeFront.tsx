@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 
 const changeColor = function(): void {
     const element = document.getElementById('pdf');
@@ -7,7 +7,7 @@ const changeColor = function(): void {
     }
 };
 
-const ChangeFront = function() {
+const ChangeFront = function(): ReactElement {
     return <form><label id="colorFront" htmlFor="front">Changer la couleur du texte</label>
         <select onChange={changeColor} id="front">
             <option value="black">Noir</option>

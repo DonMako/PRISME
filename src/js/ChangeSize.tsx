@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 
 const improveSize = function(): void {
     const element = document.getElementById('pdf');
@@ -16,7 +16,7 @@ const diminishSize = function(): void {
     }
 }
 
-const ChangeSize = function() {
+const ChangeSize = function(): ReactElement {
     return <div id="boutonsTaille">
         <p id="changeTaille">Changer la taille du texte</p>
         <button aria-label="Diminuer la taille du texte" onClick={diminishSize}>-</button>

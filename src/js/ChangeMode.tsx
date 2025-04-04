@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 
 const eclaircir = function(): void {
     const element = document.getElementById('pdf');
@@ -20,7 +20,7 @@ const assombrir = function(): void {
     body.style.backgroundColor = "black";
 }
 
-const ChangeMode = function() {
+const ChangeMode = function(): ReactElement {
     return <div id="boutonsModes">
         <button onClick={eclaircir}>Mode clair</button>
         <button onClick={assombrir}>Mode sombre</button>

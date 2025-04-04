@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 
-const ChangeScroll = function() {
+const ChangeScroll = function(): ReactElement {
   return <button></button>
 }
 

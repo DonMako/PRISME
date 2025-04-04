@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactElement } from "react";
 
 // interface MyProps {
 //   myValue: string,
@@ -19,7 +19,7 @@ import React from "react";
 //   return <input accept=".pdf" type="file" onClick={handleChange(target)}>Charger un fichier PDF</input>
 // };
 
-const UploadFile = function() {
+const UploadFile = function(): ReactElement {
   return <input accept=".pdf" type="file">Charger un fichier PDF</input>
 };
 

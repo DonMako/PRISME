@@ -1,10 +1,10 @@
-import React, { ReactNode, useState } from 'react';
+import React, { ReactElement, useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import ToolBar from './js/ToolBar';
 import ChangeMode from './js/ChangeMode';
 import Profiles from './js/Profiles';
 
-const App = function (): ReactNode {
+const App = function (): ReactElement {
   const [uploadedFile, setUploadedFile] = useState("");
   const deleteFile = () => {
     return setUploadedFile("");

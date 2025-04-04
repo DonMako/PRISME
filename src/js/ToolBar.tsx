@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 
 import ChangeSize from "./ChangeSize";
 import ChangeFront from "./ChangeFront";
@@ -7,7 +7,7 @@ import ChangeMargin from "./ChangeMargin";
 import ChangeImages from "./ChangeImages";
 import ChangePolice from "./ChangePolice";
 
-const ToolBar = function() {
+const ToolBar = function(): ReactElement {
     return <nav id="outils">
         <ChangeSize/>
         <ChangeFront/>

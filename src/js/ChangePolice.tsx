@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 
 const changeToOpenDyslexic = function (): void {
     const element = document.getElementById('pdf');
@@ -28,7 +28,7 @@ const changeToCursive = function (): void {
     }
 }
 
-const ChangePolice = function () {
+const ChangePolice = function (): ReactElement {
     return <div id="boutonsPolice">
         <button id="boutonOpenDys" aria-label="Mettre la police Serif" onClick={changeToOpenDyslexic}>A</button>
         <button id="boutonSerif" aria-label="Mettre la police Serif" onClick={changeToSerif}>A</button>
