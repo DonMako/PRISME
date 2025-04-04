@@ -1,4 +1,6 @@
-const improveSize = () => {
+import React from 'react';
+
+const improveSize = function(): void {
     const element = document.getElementById('pdf');
     if (element != null) {
         const style = getComputedStyle(element);
@@ -6,7 +8,7 @@ const improveSize = () => {
     }
 }
 
-const diminishSize = () => {
+const diminishSize = function(): void {
     const element = document.getElementById('pdf');
     if (element != null) {
         const style = getComputedStyle(element);
@@ -14,7 +16,7 @@ const diminishSize = () => {
     }
 }
 
-const ChangeSize = () => {
+const ChangeSize = function() {
     return <div id="boutonsTaille">
         <p id="changeTaille">Changer la taille du texte</p>
         <button aria-label="Diminuer la taille du texte" onClick={diminishSize}>-</button>

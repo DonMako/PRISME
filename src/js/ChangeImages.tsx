@@ -1,16 +1,18 @@
-const cacher = () => {
+import React from 'react';
+
+const cacher = function(): void {
     const element = document.getElementById('pdf');
-     if (element != null) {
+    if (element != null) {
         const images = element.getElementsByTagName('img');
         for (let i = 0; i < images.length; i++) {
             images.item(i).style.display = 'none';
         }
-    }      
+    }
 }
 
-const afficher = () => {
+const afficher = function(): void {
     const element = document.getElementById('pdf');
-     if (element != null) {
+    if (element != null) {
         const images = element.getElementsByTagName('img');
         for (let i = 0; i < images.length; i++) {
             images.item(i).style.display = '';
@@ -18,10 +20,10 @@ const afficher = () => {
     }
 }
 
-const ChangeImages = () => {
+const ChangeImages = function() {
     return <div id="boutonsImages">
-    <button onClick={afficher}>Afficher les images</button>
-    <button onClick={cacher}>Masquer les images</button>
+        <button onClick={afficher}>Afficher les images</button>
+        <button onClick={cacher}>Masquer les images</button>
     </div>
 }
 

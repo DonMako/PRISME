@@ -1,4 +1,6 @@
-const Profiles = () => {
+import React from 'react';
+
+const Profiles = function() {
     return <form id="choixProfil"><label style={{'color':'black'}} htmlFor="profils">Profil sélectionné : </label>
     <select id="profils">
       <option value="profil1">Support de cours</option>

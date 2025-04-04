@@ -1,3 +1,5 @@
+@font-face { font-family: "OpenDyslexic"; src: url('https://dl.dropboxusercontent.com/s/qfpakpjedhsrdb9/OpenDyslexicAlta-Regular.ttf'); } 
+
 #boutonsLargeur, #boutonsMarges, #boutonsModes, #boutonsTaille {
     display: flex;
     margin: 0.5em
@@ -5,4 +7,24 @@
 
 #colorBack, #colorFront, #interlignes {
     color: black
+}
+
+#boutonsPolice {
+    display: flex;
+}
+
+#boutonOpenDys {
+    font-family: OpenDyslexic
+}
+
+#boutonSerif {
+    font-family: serif
+}
+
+#boutonMonospace {
+    font-family: monospace
+}
+
+#boutonCursive {
+    font-family: cursive
 }

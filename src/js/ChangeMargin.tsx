@@ -1,4 +1,6 @@
-const improveMargin = () => {
+import React from 'react';
+
+const improveMargin = function(): void {
     const element = document.getElementById('pdf');
     if (element != null) {
         const style = getComputedStyle(element);
@@ -6,7 +8,7 @@ const improveMargin = () => {
     }
 }
 
-const diminishMargin = () => {
+const diminishMargin = function(): void {
     const element = document.getElementById('pdf');
     if (element != null) {
         const style = getComputedStyle(element);
@@ -14,7 +16,7 @@ const diminishMargin = () => {
     }
 }
 
-const ChangeMargin = () => {
+const ChangeMargin = function() {
     return <div id="boutonsMarges">
         <p id="interlignes">Changer l'interlignage</p>
         <button aria-label="Diminuer la marge" onClick={diminishMargin}>-</button>

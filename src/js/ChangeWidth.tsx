@@ -1,4 +1,6 @@
-const improveWidth = () => {
+import React from 'react';
+
+const improveWidth = function(): void {
     const element = document.getElementById('pdf');
     if (element != null) {
         const style = getComputedStyle(element);
@@ -7,7 +9,7 @@ const improveWidth = () => {
     }
 }
 
-const diminishWidth = () => {
+const diminishWidth = function(): void {
     const element = document.getElementById('pdf');
     if (element != null) {
         const style = getComputedStyle(element);
@@ -16,7 +18,7 @@ const diminishWidth = () => {
     }
 }
 
-const ChangeWidth = () => {
+const ChangeWidth = function() {
     return <div id="boutonsLargeur">
         <p>Changer la largeur du PDF</p>
         <button aria-label="Diminuer la largeur du PDF" onClick={diminishWidth}>-</button>
