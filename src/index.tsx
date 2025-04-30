@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import ToolBar from './toolbar/ToolBar';
 import ChangeMode from './ChangeMode';
 import Profiles from './toolbar/Profiles';
+import UploadPdf from './UploadPdf';
 
 const App = function (): ReactElement {
   const [uploadedFile, setUploadedFile] = useState("");
@@ -14,7 +15,7 @@ const App = function (): ReactElement {
     <ChangeMode />
     <h2 id="outils">
       <section id="contenu">
-        <button>On doit avoir l'upload ici</button>
+        <UploadPdf onChange={setUploadedFile}/>
         <div id="fileName">{uploadedFile}</div>
         <button onClick={deleteFile}>Fermer le PDF chargé</button>
       </section>

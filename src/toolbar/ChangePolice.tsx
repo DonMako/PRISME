@@ -1,34 +1,34 @@
 import React, { ReactElement } from 'react';
 
-const changeToOpenDyslexic = function (): void {
+const changeToOpenDyslexic = function(): void {
     const element = document.getElementById('pdf');
     if (element != null) {
         element.style.fontFamily = "OpenDyslexic";
     }
 }
 
-const changeToSerif = function (): void {
+const changeToSerif = function(): void {
     const element = document.getElementById('pdf');
     if (element != null) {
         element.style.fontFamily = "serif";
     }
 }
 
-const changeToMonospace = function (): void {
+const changeToMonospace = function(): void {
     const element = document.getElementById('pdf');
     if (element != null) {
         element.style.fontFamily = "monospace";
     }
 }
 
-const changeToCursive = function (): void {
+const changeToCursive = function(): void {
     const element = document.getElementById('pdf');
     if (element != null) {
         element.style.fontFamily = "cursive";
     }
 }
 
-const ChangePolice = function (): ReactElement {
+const ChangePolice = function(): ReactElement {
     return <div id="boutonsPolice">
         <button id="boutonOpenDys" aria-label="Mettre la police Serif" onClick={changeToOpenDyslexic}>A</button>
         <button id="boutonSerif" aria-label="Mettre la police Serif" onClick={changeToSerif}>A</button>
