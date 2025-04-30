@@ -11,7 +11,7 @@
     "cra-template": "1.2.0",
     "material": "^0.9.22",
     "pdfjs-dist": "^3.4.120",
-    "react": "^19.0.0",
+    "react": "^19.1.0",
     "react-dom": "^19.0.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^4.2.4"
