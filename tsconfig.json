@@ -4,7 +4,13 @@
     "esModuleInterop": true,
     "jsx": "react",
     "outDir": "./build",
-    "target": "es5"
+    "target": "ESNext",
+    "module": "ESNext",
+    "strict": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node"
   },
-  "include": ["./src/**/*"]
+  "include": [
+    "src"
+, "types"  ]
 }
