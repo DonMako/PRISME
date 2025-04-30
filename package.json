@@ -10,7 +10,7 @@
     "@react-pdf-viewer/core": "^3.12.0",
     "cra-template": "1.3.0",
     "material": "^0.9.23",
-    "pdfjs-dist": "^3.4.120",
+    "pdfjs-dist": "^5.2.133",
     "react": "^19.0.0",
     "react-dom": "^19.1.0",
     "react-scripts": "5.0.1",
