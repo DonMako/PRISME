@@ -1,8 +1,8 @@
 import React, { ReactElement, useState } from 'react';
 import ReactDOM from 'react-dom/client';
-import ToolBar from './js/ToolBar';
+import ToolBar from './toolbar/ToolBar';
 import ChangeMode from './ChangeMode';
-import Profiles from './js/Profiles';
+import Profiles from './toolbar/Profiles';
 
 const App = function (): ReactElement {
   const [uploadedFile, setUploadedFile] = useState("");
