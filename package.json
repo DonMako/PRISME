@@ -43,6 +43,6 @@
   "devDependencies": {
     "source-map-loader": "^5.0.0",
     "ts-loader": "^9.5.2",
-    "typescript": "^5.8.2"
+    "typescript": "^5.8.3"
   }
 }
