@@ -13,7 +13,7 @@ const App = function (): ReactElement {
   return <div className="App">
     <ChangeMode />
     <h2 id="outils">
-      <section id="contenu" style={{ 'display': 'flex', 'marginBottom': '3em' }}>
+      <section id="contenu">
         <button>On doit avoir l'upload ici</button>
         <div id="fileName">{uploadedFile}</div>
         <button onClick={deleteFile}>Fermer le PDF chargé</button>
