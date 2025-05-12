@@ -6,7 +6,7 @@
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^7.0.2",
-    "@mui/material": "^7.0.2",
+    "@mui/material": "^7.1.0",
     "@vitejs/plugin-react": "^4.4.1",
     "material": "^0.9.23",
     "pdf2html": "^3.3.0",
