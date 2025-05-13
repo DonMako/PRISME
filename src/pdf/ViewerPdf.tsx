@@ -4,9 +4,6 @@ import pdf2html from "pdf2html";
 const ViewerPdf = function (): ReactElement {
 
 	const [htmlPdf, setHtmlPdf] = useState(null);
-	const deleteFile = () => {
-		setHtmlPdf(null);
-	}
 	const displayPdf = () => {
 		var pdf = (document.getElementById("pdf") as HTMLInputElement);
 		if (pdf?.files) {
