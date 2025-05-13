@@ -14,12 +14,11 @@ const ViewerPdf = function (): ReactElement {
 
 	return <section id="viewerPdf">
 		<form>
-			<input type="file" id="myFile" name="filename" />
+			<input type="file" id="myFile" name="filename" accept=".pdf" />
 			<input type="reset" value="Fermer le PDF chargé" />
+			<button onClick={displayPdf}>Afficher le PDF</button>
 		</form>
-		<div>
-			{htmlPdf}
-		</div>
+		{htmlPdf}
 	</section>
 }
 
