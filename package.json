@@ -10,7 +10,7 @@
     "pdf2html": "^4.2.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "vite": "^6.3.5",
+    "vite": "^7.0.0",
     "vite-jsconfig-paths": "^2.0.1",
     "web-vitals": "^5.0.3"
   },
