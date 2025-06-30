@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
     "@vitejs/plugin-react": "^4.6.0",
     "material": "^0.9.24",
     "pdf2html": "^4.3.0",
