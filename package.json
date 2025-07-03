@@ -15,7 +15,7 @@
     "web-vitals": "^5.0.0"
   },
   "scripts": {
-    "start": "vite & npm run watch:css",
+    "start": "vite --open & npm run watch:css",
     "build": "vite build",
     "serve": "vite preview"
   },

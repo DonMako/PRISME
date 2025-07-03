@@ -13,13 +13,11 @@ Les modifications actuellement possibles sont les suivantes :
 
 ---------
 
-Ce projet a été généré initialement avec [Create React App](https://github.com/facebook/create-react-app).
-
 Dans le répertoire du projet, vous pouvez exécuter les scripts suivants :
 
 ### `npm start`
 
-Exécute l'application en mode développement à l'adresse suivante dans le navigateur : [http://localhost:3000](http://localhost:3000)
+Exécute l'application en mode développement en ouvrant automatiquement l'adresse suivante dans le navigateur : http://localhost:5173
 
 ### `npm run build`
 
