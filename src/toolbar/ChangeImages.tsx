@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 
-const cacher = function(): void {
-    const element = document.getElementById('pdf');
+const cacher = function (): void {
+    const element = document.getElementById("myPdf");
     if (element != null) {
         const images = element.getElementsByTagName('img');
         for (let i = 0; i < images.length; i++) {
@@ -10,8 +10,8 @@ const cacher = function(): void {
     }
 }
 
-const afficher = function(): void {
-    const element = document.getElementById('pdf');
+const afficher = function (): void {
+    const element = document.getElementById("myPdf");
     if (element != null) {
         const images = element.getElementsByTagName('img');
         for (let i = 0; i < images.length; i++) {
@@ -20,7 +20,7 @@ const afficher = function(): void {
     }
 }
 
-const ChangeImages = function(): ReactElement {
+const ChangeImages = function (): ReactElement {
     return <div id="boutonsImages">
         <button onClick={afficher}>Afficher les images</button>
         <button onClick={cacher}>Masquer les images</button>

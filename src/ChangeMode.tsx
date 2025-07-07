@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 
-const eclaircir = function(): void {
-    const element = document.getElementById('pdf');
+const eclaircir = function (): void {
+    const element = document.getElementById("myPdf");
     if (element != null) {
         element.style.border = "2px solid black";
     }
@@ -10,8 +10,8 @@ const eclaircir = function(): void {
     body.style.backgroundColor = "white";
 }
 
-const assombrir = function(): void {
-    const element = document.getElementById('pdf');
+const assombrir = function (): void {
+    const element = document.getElementById("myPdf");
     if (element != null) {
         element.style.border = "2px solid white";
     }
@@ -20,7 +20,7 @@ const assombrir = function(): void {
     body.style.backgroundColor = "black";
 }
 
-const ChangeMode = function(): ReactElement {
+const ChangeMode = function (): ReactElement {
     return <div id="boutonsModes">
         <button onClick={eclaircir}>Mode clair</button>
         <button onClick={assombrir}>Mode sombre</button>

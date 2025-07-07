@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 
-const improveWidth = function(): void {
-    const element = document.getElementById('pdf');
+const improveWidth = function (): void {
+    const element = document.getElementById("myPdf");
     if (element != null) {
         const style = getComputedStyle(element);
         element.style.marginLeft = (parseFloat(style.marginLeft) / 16) + (0.4) + "em";
@@ -9,8 +9,8 @@ const improveWidth = function(): void {
     }
 }
 
-const diminishWidth = function(): void {
-    const element = document.getElementById('pdf');
+const diminishWidth = function (): void {
+    const element = document.getElementById("myPdf");
     if (element != null) {
         const style = getComputedStyle(element);
         element.style.marginLeft = (parseFloat(style.marginLeft) / 16) - (0.4) + "em";
@@ -18,7 +18,7 @@ const diminishWidth = function(): void {
     }
 }
 
-const ChangeWidth = function(): ReactElement {
+const ChangeWidth = function (): ReactElement {
     return <div id="boutonsLargeur">
         <p>Changer la largeur du PDF</p>
         <button aria-label="Diminuer la largeur du PDF" onClick={diminishWidth}>-</button>
