@@ -20,24 +20,24 @@ const ViewerPdf = function (): ReactElement {
 				);
 				if (files[0]) {
 					reader.readAsDataURL(files[0]);
-					document.getElementById("close")?.removeAttribute("disabled");
-					document.getElementById("myFile")?.setAttribute("disabled", "disabled");
 				}
 			}
 		}
 	};
 
 	function closePdf() {
-		document.getElementById("myFile")?.removeAttribute("disabled");
-		document.getElementById("close")?.setAttribute("disabled", "disabled");
+		console.log("coucou");
+		document.getElementById("myPdf")?.setAttribute("src", "");
+		document.getElementById("myFile")?.removeAttribute("value");
+		setPdf("");
 	}
 
 	return <section id="viewerPdf">
-		<div id="boutonsPdf">
+		<form id="boutonsPdf">
 			<input type="file" id="myFile" name="filename" accept=".pdf" onChange={handleChange} />
-			<button id="close" disabled onClick={closePdf}>Fermer le PDF chargé</button>
-		</div>
-		{pdf && <embed src="" id="myPdf" type="application/pdf" />}
+			<input type="reset" id="close" onClick={closePdf} value="Fermer le PDF chargé" />
+		</form>
+		{pdf && <embed src={undefined} id="myPdf" type="application/pdf" />}
 	</section>
 }
 
