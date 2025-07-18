@@ -1,10 +1,7 @@
 import React, { ReactElement } from "react";
 
 function changeColor(): void {
-    const element = document.getElementById("myPdf");
-    if (element != null) {
-        element.style.backgroundColor = (document.getElementById("back") as HTMLInputElement).value;
-    }
+    document.getElementById("myPdf")!.style.backgroundColor = (document.getElementById("back") as HTMLInputElement).value;
 }
 
 export default function ChangeBack(): ReactElement {

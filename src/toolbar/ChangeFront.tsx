@@ -1,10 +1,7 @@
 import React, { ReactElement } from "react";
 
 function changeColor(): void {
-    const element = document.getElementById("myPdf");
-    if (element != null) {
-        element.style.color = (document.getElementById("front") as HTMLInputElement).value;
-    }
+    document.getElementById("myPdf")!.style.color = (document.getElementById("front") as HTMLInputElement).value;
 };
 
 export default function ChangeFront(): ReactElement {

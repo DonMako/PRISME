@@ -7,32 +7,26 @@ export default function ChangeTheme(): ReactElement {
     function change(): void {
         if (dark) {
             setDark(false);
-            document.getElementById("modeButton")?.setAttribute("value", "Light theme");
-            document.getElementById("themeSymbol")?.setAttribute("src", "/images/moon.svg");
+            document.getElementById("modeButton")!.setAttribute("value", "Light theme");
+            document.getElementById("themeSymbol")!.setAttribute("src", "/images/moon.svg");
             lighten();
         } else {
             setDark(true);
-            document.getElementById("modeButton")?.setAttribute("value", "Dark theme");
-            document.getElementById("themeSymbol")?.setAttribute("src", "/images/sun.svg");
+            document.getElementById("modeButton")!.setAttribute("value", "Dark theme");
+            document.getElementById("themeSymbol")!.setAttribute("src", "/images/sun.svg");
             darken();
         }
     }
 
     function lighten(): void {
-        const element = document.getElementById("myPdf");
-        if (element != null) {
-            element.style.border = "2px solid black";
-        }
+        document.getElementById("myPdf")!.style.border = "2px solid black";
         let body = document.getElementsByTagName("body")[0];
         body.style.color = "black";
         body.style.backgroundColor = "white";
     }
 
     function darken(): void {
-        const element = document.getElementById("myPdf");
-        if (element != null) {
-            element.style.border = "2px solid white";
-        }
+        document.getElementById("myPdf")!.style.border = "2px solid white";
         let body = document.getElementsByTagName("body")[0];
         body.style.backgroundColor = "black";
     }

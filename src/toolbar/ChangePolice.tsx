@@ -1,31 +1,19 @@
 import React, { ReactElement } from "react";
 
 function changeToOpenDyslexic(): void {
-    const element = document.getElementById("myPdf");
-    if (element != null) {
-        element.style.fontFamily = "OpenDyslexic";
-    }
+    const element = document.getElementById("myPdf")!.style.fontFamily = "OpenDyslexic";
 }
 
 function changeToSerif(): void {
-    const element = document.getElementById("myPdf");
-    if (element != null) {
-        element.style.fontFamily = "serif";
-    }
+    const element = document.getElementById("myPdf")!.style.fontFamily = "serif";
 }
 
 function changeToMonospace(): void {
-    const element = document.getElementById("myPdf");
-    if (element != null) {
-        element.style.fontFamily = "monospace";
-    }
+    const element = document.getElementById("myPdf")!.style.fontFamily = "monospace";
 }
 
 function changeToCursive(): void {
-    const element = document.getElementById("myPdf");
-    if (element != null) {
-        element.style.fontFamily = "cursive";
-    }
+    const element = document.getElementById("myPdf")!.style.fontFamily = "cursive";
 }
 
 export default function ChangePolice(): ReactElement {
