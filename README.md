@@ -5,7 +5,7 @@
 L'utilisation de l'informatique est en constante progression dans la population. Et le PDF restant un type de fichier dans la norme d'interropérabilité informatique, son usage comme support de transmission d'informations progresse de même.
 
 Cependant, il n'existe pas encore de solutions largement diffusées et employées permettant de générer des PDFs accessibles, c'est-à-dire des PDFs permettant l'accès à leurs informations indépendamment :
-- des conditions d'accès à Interner (matériel, infrastructure réseau, ...) ;
+- des conditions d'accès à Internet (matériel, infrastructure réseau, ...) ;
 - de l'origine de l'usager (langue maternelle, culture, localisation géographique, ...) ;
 - des aptitudes de l'utilisateur (physiques ou mentales)
 
