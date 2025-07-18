@@ -8,12 +8,12 @@ const ChangeMode = function (): ReactElement {
         if (dark) {
             setDark(false);
             document.getElementById("boutonMode")?.setAttribute("value", "Mode clair");
-            document.getElementById("symboleMode")?.setAttribute("src", "../public/images/moon.svg");
+            document.getElementById("symboleMode")?.setAttribute("src", "/images/moon.svg");
             lighten();
         } else {
             setDark(true);
             document.getElementById("boutonMode")?.setAttribute("value", "Mode sombre");
-            document.getElementById("symboleMode")?.setAttribute("src", "../public/images/sun.svg");
+            document.getElementById("symboleMode")?.setAttribute("src", "/images/sun.svg");
             darken();
         }
     }
@@ -38,7 +38,7 @@ const ChangeMode = function (): ReactElement {
         body.style.backgroundColor = "black";
     }
 
-    return <button id="boutonModes" onClick={change}><img id="symboleMode" src="../public/images/sun.svg" /></button>
+    return <button id="boutonModes" onClick={change}><img id="symboleMode" src="/images/sun.svg" /></button>
 }
 
 export default ChangeMode;
