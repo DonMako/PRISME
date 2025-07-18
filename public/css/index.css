@@ -20,13 +20,20 @@ body {
   outline: 4px solid blue
 }
 
-#outils {
-  display: flex;
+#toolbox {
+  width: fit-content;
+}
+
+#tools {
+  display: none;
   background-color: whitesmoke;
   border: 2px solid black;
   border-radius: 20px;
-  width: fit-content;
-  align-items: center;
+  flex-direction: column;
+}
+
+#toolboxSymbol {
+  border: none;
 }
 
 #changeTaille,
@@ -61,7 +68,8 @@ body {
   justify-content: center
 }
 
-#boutonModes {
+#themeButton,
+#toolboxButton {
   height: 40px;
   width: 40px;
   margin: 0.5em;

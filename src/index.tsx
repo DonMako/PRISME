@@ -1,13 +1,13 @@
 import React, { ReactElement } from "react";
 import ReactDOM from "react-dom/client";
 import ToolBar from "./toolbar/ToolBar";
-import ChangeMode from "./ChangeMode";
+import ChangeTheme from "./ChangeTheme";
 import ViewerPdf from "./pdf/ViewerPdf";
 
 const App = function (): ReactElement {
 
   return <div className="App">
-    <ChangeMode />
+    <ChangeTheme />
     <ViewerPdf />
     <ToolBar />
   </div>

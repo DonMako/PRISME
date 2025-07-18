@@ -10,7 +10,7 @@
 
 #elements {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: 0.5em;
     align-items: center;
 }

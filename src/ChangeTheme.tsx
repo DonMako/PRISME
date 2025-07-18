@@ -1,19 +1,19 @@
 import React, { ReactElement, useState } from "react";
 
-const ChangeMode = function (): ReactElement {
+const ChangeTheme = function (): ReactElement {
 
     const [dark, setDark] = useState(true);
 
     function change(): void {
         if (dark) {
             setDark(false);
-            document.getElementById("boutonMode")?.setAttribute("value", "Mode clair");
-            document.getElementById("symboleMode")?.setAttribute("src", "/images/moon.svg");
+            document.getElementById("modeButton")?.setAttribute("value", "Light theme");
+            document.getElementById("themeSymbol")?.setAttribute("src", "/images/moon.svg");
             lighten();
         } else {
             setDark(true);
-            document.getElementById("boutonMode")?.setAttribute("value", "Mode sombre");
-            document.getElementById("symboleMode")?.setAttribute("src", "/images/sun.svg");
+            document.getElementById("modeButton")?.setAttribute("value", "Dark theme");
+            document.getElementById("themeSymbol")?.setAttribute("src", "/images/sun.svg");
             darken();
         }
     }
@@ -37,7 +37,7 @@ const ChangeMode = function (): ReactElement {
         body.style.backgroundColor = "black";
     }
 
-    return <button id="boutonModes" onClick={change}><img id="symboleMode" src="/images/sun.svg" /></button>
+    return <button id="themeButton" onClick={change}><img id="themeSymbol" src="/images/sun.svg" /></button>
 }
 
-export default ChangeMode;
+export default ChangeTheme;
