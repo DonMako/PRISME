@@ -1,6 +1,6 @@
 import React, { ReactElement } from "react";
 
-const improveMargin = function (): void {
+function improveMargin(): void {
     const element = document.getElementById("myPdf");
     if (element != null) {
         const style = getComputedStyle(element);
@@ -8,7 +8,7 @@ const improveMargin = function (): void {
     }
 }
 
-const diminishMargin = function (): void {
+function diminishMargin(): void {
     const element = document.getElementById("myPdf");
     if (element != null) {
         const style = getComputedStyle(element);

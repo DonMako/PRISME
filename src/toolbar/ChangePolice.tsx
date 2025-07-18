@@ -1,27 +1,27 @@
 import React, { ReactElement } from "react";
 
-const changeToOpenDyslexic = function (): void {
+function changeToOpenDyslexic(): void {
     const element = document.getElementById("myPdf");
     if (element != null) {
         element.style.fontFamily = "OpenDyslexic";
     }
 }
 
-const changeToSerif = function (): void {
+function changeToSerif(): void {
     const element = document.getElementById("myPdf");
     if (element != null) {
         element.style.fontFamily = "serif";
     }
 }
 
-const changeToMonospace = function (): void {
+function changeToMonospace(): void {
     const element = document.getElementById("myPdf");
     if (element != null) {
         element.style.fontFamily = "monospace";
     }
 }
 
-const changeToCursive = function (): void {
+function changeToCursive(): void {
     const element = document.getElementById("myPdf");
     if (element != null) {
         element.style.fontFamily = "cursive";

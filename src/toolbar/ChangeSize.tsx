@@ -1,6 +1,6 @@
 import React, { ReactElement } from "react";
 
-const improveSize = function (): void {
+function improveSize(): void {
     const element = document.getElementById("myPdf");
     if (element != null) {
         const style = getComputedStyle(element);
@@ -8,7 +8,7 @@ const improveSize = function (): void {
     }
 }
 
-const diminishSize = function (): void {
+function diminishSize(): void {
     const element = document.getElementById("myPdf");
     if (element != null) {
         const style = getComputedStyle(element);
