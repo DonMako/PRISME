@@ -18,7 +18,6 @@ PRISME est une visionneuse PDF visant à améliorer l'expérience de lecture pou
 Les modifications actuellement possibles sont les suivantes :
 - changer la couleur du fond ;
 - changer la couleur du lettrage ;
-- afficher (ou non) les images ;
 - changer la marge ;
 - changer la police ;
 - faire un défilement automatique ;
