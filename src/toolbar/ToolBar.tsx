@@ -9,8 +9,10 @@ import ChangePolice from "./ChangePolice";
 const ToolBar = function (): ReactElement {
     return <nav id="outils">
         <ChangeSize />
-        <ChangeFront />
-        <ChangeBack />
+        <section id="changeColor">
+            <ChangeFront />
+            <ChangeBack />
+        </section>
         <ChangeMargin />
         <ChangePolice />
     </nav>

@@ -21,9 +21,12 @@ body {
 }
 
 #outils {
+  display: flex;
   background-color: whitesmoke;
   border: 2px solid black;
-  border-radius: 20px
+  border-radius: 20px;
+  width: fit-content;
+  align-items: center;
 }
 
 #changeTaille,
@@ -38,7 +41,6 @@ body {
   margin: 0.5em
 }
 
-#outils,
 #police {
   display: flex
 }

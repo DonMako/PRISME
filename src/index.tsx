@@ -8,12 +8,8 @@ const App = function (): ReactElement {
 
   return <div className="App">
     <ChangeMode />
-    <h2 id="viewer">
-      <ViewerPdf />
-    </h2>
-    <h2 id="outils">
-      <ToolBar />
-    </h2>
+    <ViewerPdf />
+    <ToolBar />
   </div>
 }
 

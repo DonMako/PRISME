@@ -34,7 +34,6 @@ const ChangeMode = function (): ReactElement {
             element.style.border = "2px solid white";
         }
         let body = document.getElementsByTagName("body")[0];
-        body.style.color = "white";
         body.style.backgroundColor = "black";
     }
 

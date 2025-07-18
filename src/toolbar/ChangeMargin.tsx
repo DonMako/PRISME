@@ -17,10 +17,12 @@ const diminishMargin = function (): void {
 }
 
 const ChangeMargin = function (): ReactElement {
-    return <div id="boutonsMarges">
-        <p id="interlignes">Changer l"interlignage</p>
-        <button aria-label="Diminuer la marge" onClick={diminishMargin}>-</button>
-        <button aria-label="Augmenter la marge" onClick={improveMargin}>+</button>
+    return <div id="elements">
+        <p id="interlignes">Changer l'interlignage</p>
+        <section id="boutons">
+            <button aria-label="Diminuer la marge" onClick={diminishMargin}>-</button>
+            <button aria-label="Augmenter la marge" onClick={improveMargin}>+</button>
+        </section>
     </div>
 }
 

@@ -17,10 +17,12 @@ const diminishSize = function (): void {
 }
 
 const ChangeSize = function (): ReactElement {
-    return <div id="boutonsTaille">
+    return <div id="elements">
         <p id="changeTaille">Changer la taille du texte</p>
-        <button aria-label="Diminuer la taille du texte" onClick={diminishSize}>-</button>
-        <button aria-label="Augmenter la taille du texte" onClick={improveSize}>+</button>
+        <section id="boutons">
+            <button aria-label="Diminuer la taille du texte" onClick={diminishSize}>-</button>
+            <button aria-label="Augmenter la taille du texte" onClick={improveSize}>+</button>
+        </section>
     </div>
 }
 

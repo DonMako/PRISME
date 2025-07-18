@@ -29,11 +29,14 @@ const changeToCursive = function (): void {
 }
 
 const ChangePolice = function (): ReactElement {
-    return <div id="boutonsPolice">
-        <button id="boutonOpenDys" aria-label="Mettre la police Serif" onClick={changeToOpenDyslexic}>A</button>
-        <button id="boutonSerif" aria-label="Mettre la police Serif" onClick={changeToSerif}>A</button>
-        <button id="boutonMonospace" aria-label="Mettre la police Monospace" onClick={changeToMonospace}>A</button>
-        <button id="boutonCursive" aria-label="Mettre la police Cursive" onClick={changeToCursive}>A</button>
+    return <div id="elements">
+        <p id="interlignes">Changer la police</p>
+        <section id="boutons">
+            <button id="boutonOpenDys" aria-label="Mettre la police Serif" onClick={changeToOpenDyslexic}>A</button>
+            <button id="boutonSerif" aria-label="Mettre la police Serif" onClick={changeToSerif}>A</button>
+            <button id="boutonMonospace" aria-label="Mettre la police Monospace" onClick={changeToMonospace}>A</button>
+            <button id="boutonCursive" aria-label="Mettre la police Cursive" onClick={changeToCursive}>A</button>
+        </section>
     </div>
 }
 

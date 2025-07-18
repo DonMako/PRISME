@@ -3,35 +3,41 @@
     src: url("https://dl.dropboxusercontent.com/s/qfpakpjedhsrdb9/OpenDyslexicAlta-Regular.ttf");
 }
 
-#boutonsLargeur,
-#boutonsMarges,
-#boutonsTaille {
+#boutonsLargeur {
     display: flex;
-    margin: 0.5em
+    margin: 0.5em;
+}
+
+#elements {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em;
+    align-items: center;
+}
+
+#boutons {
+    display: flex;
+    flex-direction: row;
 }
 
 #colorBack,
 #colorFront,
 #interlignes {
-    color: black
-}
-
-#boutonsPolice {
-    display: flex
+    color: black;
 }
 
 #boutonOpenDys {
-    font-family: OpenDyslexic
+    font-family: OpenDyslexic;
 }
 
 #boutonSerif {
-    font-family: serif
+    font-family: serif;
 }
 
 #boutonMonospace {
-    font-family: monospace
+    font-family: monospace;
 }
 
 #boutonCursive {
-    font-family: cursive
+    font-family: cursive;
 }
