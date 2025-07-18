@@ -59,8 +59,9 @@ body {
   justify-content: center
 }
 
-#boutonsModes {
-  display: flex;
+#boutonModes {
+  height: 40px;
+  width: 40px;
   margin: 0.5em;
   justify-content: right
 }

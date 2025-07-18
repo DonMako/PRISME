@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement } from "react";
 
 const changeColor = function (): void {
     const element = document.getElementById("myPdf");

@@ -1,10 +1,10 @@
-import React, { ReactElement, useState } from 'react';
+import React, { ReactElement, useState } from "react";
 
 const ViewerPdf = function (): ReactElement {
 
 	const [pdf, setPdf] = useState("");
 
-	function handleChange() {
+	function handleChange(): void {
 		const element = document.getElementById("myFile");
 		if (element != null) {
 			const files = (element as HTMLInputElement).files;
@@ -25,7 +25,7 @@ const ViewerPdf = function (): ReactElement {
 		}
 	};
 
-	function closePdf() {
+	function closePdf(): void {
 		console.log("coucou");
 		document.getElementById("myPdf")?.setAttribute("src", "");
 		document.getElementById("myFile")?.removeAttribute("value");

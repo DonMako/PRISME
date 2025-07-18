@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement } from "react";
 
 const improveMargin = function (): void {
     const element = document.getElementById("myPdf");
@@ -18,7 +18,7 @@ const diminishMargin = function (): void {
 
 const ChangeMargin = function (): ReactElement {
     return <div id="boutonsMarges">
-        <p id="interlignes">Changer l'interlignage</p>
+        <p id="interlignes">Changer l"interlignage</p>
         <button aria-label="Diminuer la marge" onClick={diminishMargin}>-</button>
         <button aria-label="Augmenter la marge" onClick={improveMargin}>+</button>
     </div>
