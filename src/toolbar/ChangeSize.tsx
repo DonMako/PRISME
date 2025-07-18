@@ -16,7 +16,7 @@ const diminishSize = function (): void {
     }
 }
 
-const ChangeSize = function (): ReactElement {
+export default function ChangeSize(): ReactElement {
     return <div id="elements">
         <p id="changeTaille">Changer la taille du texte</p>
         <section id="boutons">
@@ -25,5 +25,3 @@ const ChangeSize = function (): ReactElement {
         </section>
     </div>
 }
-
-export default ChangeSize;

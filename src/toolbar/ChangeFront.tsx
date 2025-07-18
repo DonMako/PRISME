@@ -7,7 +7,7 @@ const changeColor = function (): void {
     }
 };
 
-const ChangeFront = function (): ReactElement {
+export default function ChangeFront(): ReactElement {
     return <form>
         <label id="colorFront" htmlFor="front">Changer la couleur du texte</label>
         <select onChange={changeColor} id="front">
@@ -19,5 +19,3 @@ const ChangeFront = function (): ReactElement {
             <option value="green">Vert</option>
         </select></form>
 }
-
-export default ChangeFront;

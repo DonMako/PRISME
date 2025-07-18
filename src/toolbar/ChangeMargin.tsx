@@ -16,7 +16,7 @@ const diminishMargin = function (): void {
     }
 }
 
-const ChangeMargin = function (): ReactElement {
+export default function ChangeMargin(): ReactElement {
     return <div id="elements">
         <p id="interlignes">Changer l'interlignage</p>
         <section id="boutons">
@@ -25,5 +25,3 @@ const ChangeMargin = function (): ReactElement {
         </section>
     </div>
 }
-
-export default ChangeMargin;

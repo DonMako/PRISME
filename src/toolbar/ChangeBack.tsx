@@ -7,7 +7,7 @@ const changeColor = function (): void {
     }
 }
 
-const ChangeBack = function (): ReactElement {
+export default function ChangeBack(): ReactElement {
     return <form><label id="colorBack" htmlFor="back">Changer la couleur du fond</label>
         <select onChange={changeColor} id="back">
             <option value="white">Blanc</option>
@@ -18,5 +18,3 @@ const ChangeBack = function (): ReactElement {
             <option value="green">Vert</option>
         </select></form>
 }
-
-export default ChangeBack;

@@ -4,7 +4,7 @@ import ToolBar from "./toolbar/ToolBar";
 import ChangeTheme from "./ChangeTheme";
 import ViewerPdf from "./pdf/ViewerPdf";
 
-const App = function (): ReactElement {
+function App(): ReactElement {
 
   return <div className="App">
     <ChangeTheme />

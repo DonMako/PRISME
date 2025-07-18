@@ -1,6 +1,6 @@
 import React, { ReactElement, useState } from "react";
 
-const ViewerPdf = function (): ReactElement {
+export default function ViewerPdf(): ReactElement {
 
 	const [pdf, setPdf] = useState("");
 
@@ -40,5 +40,3 @@ const ViewerPdf = function (): ReactElement {
 		{pdf && <embed src={undefined} id="myPdf" type="application/pdf" />}
 	</section>
 }
-
-export default ViewerPdf;

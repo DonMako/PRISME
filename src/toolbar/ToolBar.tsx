@@ -5,7 +5,7 @@ import ChangeBack from "./ChangeBack";
 import ChangeMargin from "./ChangeMargin";
 import ChangePolice from "./ChangePolice";
 
-const ToolBar = function (): ReactElement {
+export default function ToolBar(): ReactElement {
 
     const [open, setOpen] = useState(false);
 
@@ -32,5 +32,3 @@ const ToolBar = function (): ReactElement {
         </section>
     </div>
 }
-
-export default ToolBar;

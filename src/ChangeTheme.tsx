@@ -1,6 +1,6 @@
 import React, { ReactElement, useState } from "react";
 
-const ChangeTheme = function (): ReactElement {
+export default function ChangeTheme(): ReactElement {
 
     const [dark, setDark] = useState(true);
 
@@ -39,5 +39,3 @@ const ChangeTheme = function (): ReactElement {
 
     return <button id="themeButton" onClick={change}><img id="themeSymbol" src="/images/sun.svg" /></button>
 }
-
-export default ChangeTheme;

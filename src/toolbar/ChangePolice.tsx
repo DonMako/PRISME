@@ -28,7 +28,7 @@ const changeToCursive = function (): void {
     }
 }
 
-const ChangePolice = function (): ReactElement {
+export default function ChangePolice(): ReactElement {
     return <div id="elements">
         <p id="interlignes">Changer la police</p>
         <section id="boutons">
@@ -39,5 +39,3 @@ const ChangePolice = function (): ReactElement {
         </section>
     </div>
 }
-
-export default ChangePolice;
