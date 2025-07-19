@@ -1,13 +1,14 @@
 import React, { ReactElement } from "react";
 import ReactDOM from "react-dom/client";
-import ToolBar from "./toolbar/ToolBar";
-import ChangeTheme from "./ChangeTheme";
+import Menu from "./menu/Menu";
 import ViewerPdf from "./pdf/ViewerPdf";
+import ToolBar from "./toolbar/ToolBar";
+import './i18n';
 
 function App(): ReactElement {
 
   return <div className="App">
-    <ChangeTheme />
+    <Menu />
     <ViewerPdf />
     <ToolBar />
   </div>
