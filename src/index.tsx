@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import Menu from "./menu/Menu";
 import ViewerPdf from "./pdf/ViewerPdf";
 import ToolBar from "./toolbar/ToolBar";
-import './i18n';
+import './i18n/i18n';
 
 function App(): ReactElement {
 

@@ -1,5 +1,5 @@
 import React, { ReactElement } from "react";
-import { useTranslation } from "react-i18next";
+import i18next from "../i18n/i18n";
 
 function improveSize(): void {
     const element = document.getElementById("myPdf");
@@ -19,10 +19,8 @@ function diminishSize(): void {
 
 export default function ChangeSize(): ReactElement {
 
-    const { t } = useTranslation();
-
     return <div id="elements">
-        <p id="changeTaille">{t("size")}</p>
+        <p id="changeTaille">{i18next.t("size")}</p>
         <section id="boutons">
             <button aria-label="Diminuer la taille du texte" onClick={diminishSize}>-</button>
             <button aria-label="Augmenter la taille du texte" onClick={improveSize}>+</button>

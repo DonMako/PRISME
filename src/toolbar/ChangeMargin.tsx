@@ -1,5 +1,5 @@
 import React, { ReactElement } from "react";
-import { useTranslation } from "react-i18next";
+import i18next from "../i18n/i18n";
 
 function improveMargin(): void {
     const element = document.getElementById("myPdf");
@@ -19,10 +19,8 @@ function diminishMargin(): void {
 
 export default function ChangeMargin(): ReactElement {
 
-    const { t } = useTranslation();
-    
     return <div id="elements">
-        <p id="interlignes">{t("margin")}</p>
+        <p id="interlignes">{i18next.t("margin")}</p>
         <section id="boutons">
             <button aria-label="Diminuer la marge" onClick={diminishMargin}>-</button>
             <button aria-label="Augmenter la marge" onClick={improveMargin}>+</button>
