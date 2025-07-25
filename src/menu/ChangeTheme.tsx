@@ -7,12 +7,12 @@ export default function ChangeTheme(): ReactElement {
     function change(): void {
         if (dark) {
             setDark(false);
-            document.getElementById("modeButton")!.setAttribute("value", "Light theme");
+            document.getElementById("themeButton")!.setAttribute("value", "Light theme");
             document.getElementById("themeSymbol")!.setAttribute("src", "/images/moon.svg");
             lighten();
         } else {
             setDark(true);
-            document.getElementById("modeButton")!.setAttribute("value", "Dark theme");
+            document.getElementById("themeButton")!.setAttribute("value", "Dark theme");
             document.getElementById("themeSymbol")!.setAttribute("src", "/images/sun.svg");
             darken();
         }
@@ -28,6 +28,7 @@ export default function ChangeTheme(): ReactElement {
     function darken(): void {
         document.getElementById("myPdf")!.style.border = "2px solid white";
         let body = document.getElementsByTagName("body")[0];
+        body.style.color = "white";
         body.style.backgroundColor = "black";
     }
 
