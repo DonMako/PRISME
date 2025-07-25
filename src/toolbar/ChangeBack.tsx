@@ -1,5 +1,5 @@
 import React, { ReactElement } from "react";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 
 function changeColor(): void {
     document.getElementById("myPdf")!.style.backgroundColor = (document.getElementById("back") as HTMLInputElement).value;
@@ -7,7 +7,7 @@ function changeColor(): void {
 
 export default function ChangeBack(): ReactElement {
 
-    const { t } = useTranslation();
+    const { t } = useTranslation()
 
     return <form>
         <label id="colorBack" htmlFor="back">{t("colorBack")}</label>

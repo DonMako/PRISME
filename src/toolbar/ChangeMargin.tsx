@@ -20,7 +20,7 @@ function diminishMargin(): void {
 export default function ChangeMargin(): ReactElement {
 
     const { t } = useTranslation();
-    
+
     return <div id="elements">
         <p id="interlignes">{t("margin")}</p>
         <section id="boutons">

@@ -20,7 +20,7 @@ function changeToCursive(): void {
 export default function ChangePolice(): ReactElement {
 
     const { t } = useTranslation();
-    
+
     return <div id="elements">
         <p id="interlignes">{t("police")}</p>
         <section id="boutons">

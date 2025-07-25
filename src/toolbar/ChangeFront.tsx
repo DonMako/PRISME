@@ -8,7 +8,7 @@ function changeColor(): void {
 export default function ChangeFront(): ReactElement {
 
     const { t } = useTranslation();
-    
+
     return <form>
         <label id="colorFront" htmlFor="front">{t("colorFront")}</label>
         <select onChange={changeColor} id="front">
