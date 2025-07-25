@@ -1,5 +1,5 @@
 import React, { ReactElement } from "react";
-import i18next from "../i18n/i18n";
+import { useTranslation } from "react-i18next";
 
 function changeColor(): void {
     document.getElementById("myPdf")!.style.backgroundColor = (document.getElementById("back") as HTMLInputElement).value;
@@ -7,8 +7,10 @@ function changeColor(): void {
 
 export default function ChangeBack(): ReactElement {
 
+    const { t } = useTranslation()
+
     return <form>
-        <label id="colorBack" htmlFor="back">{i18next.t("colorBack")}</label>
+        <label id="colorBack" htmlFor="back">{t("colorBack")}</label>
         <select onChange={changeColor} id="back">
             <option value="white">Blanc</option>
             <option value="black">Noir</option>

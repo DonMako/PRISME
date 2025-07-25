@@ -1,5 +1,5 @@
 import React, { ReactElement } from "react";
-import i18next from "../i18n/i18n";
+import { useTranslation } from "react-i18next";
 
 function changeToOpenDyslexic(): void {
     const element = document.getElementById("myPdf")!.style.fontFamily = "OpenDyslexic";
@@ -19,8 +19,10 @@ function changeToCursive(): void {
 
 export default function ChangePolice(): ReactElement {
 
+    const { t } = useTranslation();
+
     return <div id="elements">
-        <p id="interlignes">{i18next.t("police")}</p>
+        <p id="interlignes">{t("police")}</p>
         <section id="boutons">
             <button id="boutonOpenDys" aria-label="Mettre la police Serif" onClick={changeToOpenDyslexic}>A</button>
             <button id="boutonSerif" aria-label="Mettre la police Serif" onClick={changeToSerif}>A</button>
