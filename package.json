@@ -5,7 +5,7 @@
   "dependencies": {
     "@vitejs/plugin-react": "^4.7.0",
     "i18next": "^25.3.2",
-    "react": "^19.1.0",
+    "react": "^19.1.1",
     "react-dom": "^19.1.0",
     "react-i18next": "^15.6.1",
     "vite": "^7.0.6",
@@ -29,6 +29,6 @@
     ]
   },
   "devDependencies": {
-    "@types/react": "^19.1.8"
+    "@types/react": "^19.1.9"
   }
 }
