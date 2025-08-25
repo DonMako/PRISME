@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@vitejs/plugin-react": "^5.0.0",
-    "i18next": "^25.3.6",
+    "i18next": "^25.4.2",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-i18next": "^15.6.1",
