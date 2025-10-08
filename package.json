@@ -7,7 +7,7 @@
     "i18next": "^25.5.3",
     "react": "^19.1.1",
     "react-dom": "^19.2.0",
-    "react-i18next": "^15.7.3",
+    "react-i18next": "^16.0.0",
     "vite": "^7.1.9",
     "vite-jsconfig-paths": "^2.0.1"
   },
