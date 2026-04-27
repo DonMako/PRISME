@@ -8,7 +8,7 @@
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
     "react-i18next": "^16.5.8",
-    "vite": "^7.3.2",
+    "vite": "^8.0.10",
     "vite-jsconfig-paths": "^2.0.1"
   },
   "scripts": {
